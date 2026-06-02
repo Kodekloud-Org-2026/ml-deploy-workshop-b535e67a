@@ -3,12 +3,12 @@
 # Demo step E (fail-closed): change this to "latest" and watch the pipeline halt.
 
 aws_region    = "us-east-1"
-model_version = "1.0.0"
+model_version = "latest"
+
 
 # These five values are populated per session from the bootstrap stack's
 # outputs (/tmp/nfcu-bootstrap-outputs.json). See the pre-req setup steps in
-# LAB_GUIDE.md / README.md for the populate-from-bootstrap snippet.
-#
+# LAB_GUIDE.md / README.md for the populate-from-bootstrap snippet.#
 # image_uri / image_digest are overridden by the containerize job via TF_VAR_*
 # env vars — leave them as REPLACE_ME here.
 image_uri             = "REPLACE_ME_FROM_CONTAINERIZE_JOB"
